@@ -5,7 +5,7 @@ squares.forEach((square) => {
 	square.addEventListener("mouseout", handleMouseOut)
 })
 
-function handledMouseOver(event){
+function handleMouseOver(event){
 	squares.forEach((square) => {
 		if(square !== event.target){
 			square.style.backgroundColor = "#6F4E37";
@@ -13,10 +13,9 @@ function handledMouseOver(event){
 	})
 }
 
-function handledMouseOut(event){
+function handleMouseOut(event){
 	squares.forEach((square) => {
-		if(square !== event.target){
 			square.style.backgroundColor = "#E6E6FA";
-		}
+		
 	})
 }
